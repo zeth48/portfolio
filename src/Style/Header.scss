@@ -1,0 +1,47 @@
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul li{
+  display: inline;
+  margin-left: 100px;
+}
+nav ul li a{
+  display: inline-block;
+  font-size: 1.5em;
+  color: royalblue;
+  font-weight: 600;
+  overflow: hidden;
+  background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+  &:hover {
+    background-position: 0 100%;
+  }
+}
+/* nav ul li a:link{
+  text-decoration: none;
+}
+nav ul li a:visited{
+  text-decoration: none;
+} */
+#hlogo{
+  cursor: pointer;
+}
+#mlogo{
+  cursor: pointer;
+  margin-left: 40px;
+}
