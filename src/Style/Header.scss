@@ -17,10 +17,10 @@ nav ul li{
 nav ul li a{
   display: inline-block;
   font-size: 1.5em;
-  color: royalblue;
+  color: rgb(130, 131, 133);
   font-weight: 600;
   overflow: hidden;
-  background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+  background: linear-gradient(to right, black, black 50%, rgb(130, 131, 133) 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,12 +32,6 @@ nav ul li a{
     background-position: 0 100%;
   }
 }
-/* nav ul li a:link{
-  text-decoration: none;
-}
-nav ul li a:visited{
-  text-decoration: none;
-} */
 #hlogo{
   cursor: pointer;
 }
