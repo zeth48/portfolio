@@ -1,26 +1,24 @@
-Headerimport {ReactComponent as HeaderLogo} from '../assets/header.svg';
-import {ReactComponent as MenuLogo} from '../assets/menu.svg'
-import LinkComponent from './LinkComponent.js';
+import {ReactComponent as HeaderLogo} from '../assets/header.svg';
 import Navbar from '../Components/NavbarComponent.js'
 import "../Style/HeaderComponent.scss"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function HeaderComponent(){
     return(
       <div class="navbar">
+        <Router >
         <HeaderLogo height="60px" width="40px" id="hlogo" alt="Home"/>
         <nav>
           <ul>
-            <li><LinkComponent title={`Home`} url={`https://www.zeth48cloud.in`}/></li>
-            <li><LinkComponent title={`About`} url={``}/></li>
-            <li><LinkComponent title={`Projects`} url={``}/></li>
+            <li> <Link to="https://www.zeth48cloud.in" className="hlink"> Home </Link> </li>
+            <li> <Link to="#" className="habout"> About </Link> </li>
+            <li> <Link to="#" className="hprojects"> Projects </Link> </li>
           </ul>
         </nav>
-        <Router >
-          <Navbar id="mlogo"/>
-              <Switch>
-                  <Route path='/' />
-              </Switch>
+        <Navbar id="mlogo"/>
+          <Switch>
+           <Route path='/' />
+          </Switch>
         </Router >
       </div>
     );

@@ -1,6 +1,5 @@
 import './App.scss';
 import Header from './Components/HeaderComponent.js';
-import Navbar from './Components/NavbarComponent.js'
 
 function App() {
   return (
