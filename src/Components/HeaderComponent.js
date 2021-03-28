@@ -13,12 +13,13 @@ function HeaderComponent(){
             <li> <Link to="https://www.zeth48cloud.in" className="hlink"> Home </Link> </li>
             <li> <Link to="#" className="habout"> About </Link> </li>
             <li> <Link to="#" className="hprojects"> Projects </Link> </li>
+            <li> <Navbar id="mlogo"/> 
+            <Switch>
+                <Route path='/' />
+            </Switch>
+            </li>
           </ul>
         </nav>
-        <Navbar id="mlogo"/>
-          <Switch>
-           <Route path='/' />
-          </Switch>
         </Router >
       </div>
     );
