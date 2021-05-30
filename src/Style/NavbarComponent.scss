@@ -1,0 +1,28 @@
+.menu-bars {
+    margin-left: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 7px;
+    right: 7px;
+    width: 300px;
+    height: 100%;
+    background-color: peru;
+    transition: left 300ms ease-out;
+}
+.nav-menu.active {
+    visibility: hidden;
+}
+.nav-menu .hamburger{
+    height: 12%;
+}
+.nav-text {
+    display: text;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}

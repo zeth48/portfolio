@@ -1,5 +1,9 @@
 import './App.scss';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Header from './Components/HeaderComponent.js';
+import Navbar from './Components/NavbarComponent.js';
+import Home from './Pages/Home.js';
+import About from './Pages/About.js';
 
 function App() {
   return (
@@ -12,9 +16,23 @@ function App() {
                    <div id="right"></div>
       {/*-----------------Ends Here---------------------------*/}
       
-      <Header />
+    <Router>
+        <Header />
+        <Navbar />
+
+      <Switch>
+         <Route path="/">
+             <Home />
+         </Route>
+
+        <Route path="/about">
+             <About />
+        </Route>
+      </Switch>
+    </Router>
+
     </div>
-  );
+ );
 }
 
 export default App;
